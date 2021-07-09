@@ -87,7 +87,6 @@ li a {
 /* education section begin */
 #education,
 #skills,
-#projects,
 #achievements {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -99,7 +98,17 @@ li a {
   margin-top: 0;
   padding: 10px;
 }
-
+#projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  grid-template-areas: "card1 card2";
+  margin: 10px;
+  margin-top: 0;
+  padding: 10px;
+}
 .column1 {
   grid-area: card1;
 }
@@ -129,19 +138,20 @@ li a {
   color: #fff;
   background-color: #16dcd6;
   border-radius: 25px;
-  height: 100px;
+  height: 140px;
   font-size: 1.5rem;
 }
 
 #skills .card {
   height: 300px;
 }
-
+#education .card{
+  height:300px;
+}
 .edu {
   text-align: center;
   font-weight: bold;
   font-size: 1.7rem;
-
   color: rgb(83, 83, 83);
 }
 
